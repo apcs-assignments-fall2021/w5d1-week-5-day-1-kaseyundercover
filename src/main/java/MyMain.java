@@ -6,15 +6,29 @@ public class MyMain {
     // to sort our code
     // This algorithm returns the sorted array
     public static int[] selectionSort(int[] arr) {
-        // REPLACE THIS WITH YOUR CODE
+        for (int i = 0; i < arr.length; i++) {
+            //find the index of the smallest value
+            int minIndex=i;
+            for (int j = i; j < arr.length; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+
+            }
+            //swap the smallest value and the first spot
+            int temp = arr[i];
+            arr[i]=arr[minIndex];
+            arr[minIndex]=temp;
+        }
         return arr;
     }
+
 
     // Implement the insertion sort algorithm that we discussed in class
     // to sort our code
     // This algorithm returns the sorted array
     public static int[] insertionSort(int[] arr) {
-        // REPLACE THIS WITH YOUR CODE
+       
         return arr;
     }
 
